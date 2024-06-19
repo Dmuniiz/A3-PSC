@@ -21,9 +21,9 @@ public class Paciente {
     private Object id;
     private String nome;
     private String senha;
-    private int telefone;
+    private String telefone;
     private int idade;
-    private int CPF;
+    private String CPF;
     private int is_paciente;
 
     public Paciente() {
@@ -58,12 +58,12 @@ public class Paciente {
         this.senha = senha;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
     public void setTelefone(String Telefone) {
-        this.telefone = Integer.parseInt(Telefone);
+        this.telefone = Telefone;
     }
 
     public int getIdade() {
@@ -74,11 +74,11 @@ public class Paciente {
         this.idade = idade;
     }
 
-    public int getCPF() {
+    public String getCPF() {
         return CPF;
     }
 
-    public void setCPF(int CPF) {
+    public void setCPF(String CPF) {
         this.CPF = CPF;
     }
     
@@ -92,9 +92,9 @@ public class Paciente {
             
             ps.setString(1, nome);
             ps.setString(2, senha);
-            ps.setInt(3, telefone);
+            ps.setString(3, telefone);
             ps.setInt(4, idade);
-            ps.setInt(5, CPF);
+            ps.setString(5, CPF);
             ps.setInt(6, is_paciente);
             
             ResultSet rs;
@@ -111,7 +111,7 @@ public class Paciente {
     }
     
     public DefaultTableModel mostrarPacientes() {
-        DefaultTableModel model = new DefaultTableModel(new String[]{"Id", "Nome", "Senha", "Idade", "Telefone", "CPF"},0);
+        DefaultTableModel model = new DefaultTableModel(new String[]{"Id", "Nome", "Senha", "Idade", "CPF", "Telefone"},0);
         String sql = "SELECT * FROM Pacientes";
         
         ConnectionFactory factory = new ConnectionFactory();
@@ -128,7 +128,7 @@ public class Paciente {
                 String telefone = rs.getString("Telefone");
                 String cpf = rs.getString("CPF");
                 
-                model.addRow(new Object[]{id,nome,senha,idade,telefone,cpf});
+                model.addRow(new Object[]{id,nome,senha,idade,cpf,telefone});
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -162,7 +162,7 @@ public class Paciente {
                 String telefone = rs.getString("Telefone");
                 String cpf = rs.getString("CPF");
                 
-                model.addRow(new Object[]{id,nome,senha,idade,telefone,cpf});
+                model.addRow(new Object[]{id,nome,senha,idade,cpf,telefone});
            }
 
             
@@ -185,8 +185,8 @@ public class Paciente {
             ps.setString(1, nome);
             ps.setString(2, senha);
             ps.setInt(3, idade);
-            ps.setInt(4, telefone);
-            ps.setInt(5, CPF);
+            ps.setString(4, telefone);
+            ps.setString(5, CPF);
             ps.setObject(6, id);
             
             ps.executeUpdate();
@@ -194,8 +194,20 @@ public class Paciente {
     }
     
     public void deletarPacientes() throws SQLException{
-        String sql = "DELETE FROM Pacientes WHERE ID_pac = ?";
         ConnectionFactory factory = new ConnectionFactory();
+        String sqlfk = "DELETE FROM Exames WHERE fk_id_pac = ?";
+        
+        try(Connection c = factory.obtemConexao()){
+            PreparedStatement ps = c.prepareStatement(sqlfk);
+            
+            ps.setObject(1, id);
+            
+            ps.executeUpdate();
+        }
+        
+        
+        String sql = "DELETE FROM Pacientes WHERE ID_pac = ?";
+        
         try(Connection c = factory.obtemConexao()){
             PreparedStatement ps = c.prepareStatement(sql);
             

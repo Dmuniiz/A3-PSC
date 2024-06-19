@@ -116,7 +116,7 @@ public class AdminCadastrarPacientes extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "ID", "Nome", "Senha", "Idade", "Telefone", "CPF"
+                "ID", "Nome", "Senha", "Idade", "CPF", "Telefone"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -133,6 +133,8 @@ public class AdminCadastrarPacientes extends javax.swing.JFrame {
             TablePacientes.getColumnModel().getColumn(1).setResizable(false);
             TablePacientes.getColumnModel().getColumn(2).setResizable(false);
             TablePacientes.getColumnModel().getColumn(3).setResizable(false);
+            TablePacientes.getColumnModel().getColumn(4).setResizable(false);
+            TablePacientes.getColumnModel().getColumn(5).setResizable(false);
         }
 
         getContentPane().add(jScrollPane1);
@@ -245,7 +247,7 @@ public class AdminCadastrarPacientes extends javax.swing.JFrame {
             paciente.setSenha(senha.toString());
             paciente.setIdade(Integer.parseInt(idade.toString()));
             paciente.setTelefone(telefone.toString());
-            paciente.setCPF(Integer.parseInt(cpf.toString()));
+            paciente.setCPF(cpf.toString());
             
         }
         

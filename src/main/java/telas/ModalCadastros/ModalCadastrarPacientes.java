@@ -70,7 +70,7 @@ public class ModalCadastrarPacientes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtPacienteTelefone);
-        txtPacienteTelefone.setBounds(120, 250, 280, 24);
+        txtPacienteTelefone.setBounds(120, 190, 280, 24);
 
         txtPacienteCPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +78,7 @@ public class ModalCadastrarPacientes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtPacienteCPF);
-        txtPacienteCPF.setBounds(120, 190, 280, 24);
+        txtPacienteCPF.setBounds(120, 250, 280, 24);
         getContentPane().add(txtPacienteIdade);
         txtPacienteIdade.setBounds(120, 140, 280, 24);
 
@@ -113,7 +113,7 @@ public class ModalCadastrarPacientes extends javax.swing.JFrame {
         paciente.setSenha(txtPacienteSenha.getText());
         paciente.setIdade(Integer.parseInt(txtPacienteIdade.getText()));
         paciente.setTelefone(txtPacienteTelefone.getText());
-        paciente.setCPF(Integer.parseInt(txtPacienteCPF.getText()));
+        paciente.setCPF(txtPacienteCPF.getText());
         
         try {
             paciente.cadastrarPaciente();
@@ -131,6 +131,7 @@ public class ModalCadastrarPacientes extends javax.swing.JFrame {
 
     private void txtPacienteCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPacienteCPFActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtPacienteCPFActionPerformed
 
     private void txtPacienteNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPacienteNomeActionPerformed

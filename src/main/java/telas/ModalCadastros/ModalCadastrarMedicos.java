@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package telas.ModalCadastros;
+import Entidades.Consulta;
 import Entidades.Medicos;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -21,6 +22,11 @@ public class ModalCadastrarMedicos extends javax.swing.JFrame {
      */
     public ModalCadastrarMedicos() {
         initComponents();
+        try {
+            Consulta.listarEspecialidade(ComboBoxEspecialidade);
+        } catch (SQLException ex) {
+            Logger.getLogger(ModalCadastrarMedicos.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -72,14 +78,14 @@ public class ModalCadastrarMedicos extends javax.swing.JFrame {
         getContentPane().add(txtSenhaMedicos);
         txtSenhaMedicos.setBounds(140, 130, 210, 30);
 
-        ComboBoxEspecialidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "" }));
+        ComboBoxEspecialidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Especialidade" }));
         ComboBoxEspecialidade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ComboBoxEspecialidadeActionPerformed(evt);
             }
         });
         getContentPane().add(ComboBoxEspecialidade);
-        ComboBoxEspecialidade.setBounds(50, 200, 120, 30);
+        ComboBoxEspecialidade.setBounds(50, 200, 210, 30);
 
         btnNovaEspecialidade.setText("Nova Especialidade");
         btnNovaEspecialidade.addActionListener(new java.awt.event.ActionListener() {

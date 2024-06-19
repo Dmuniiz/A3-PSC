@@ -28,8 +28,8 @@ public class EditarCadastroPacientes extends javax.swing.JFrame {
         txtPacienteNome.setText(paciente.getNome());
         txtPacienteSenha.setText(paciente.getSenha());
         txtPacienteIdade.setText(Integer.toString(paciente.getIdade()));
-        txtPacienteTelefone.setText(Integer.toString(paciente.getTelefone()));
-        txtPacienteCPF.setText(Integer.toString(paciente.getCPF()));
+        txtPacienteTelefone.setText(paciente.getTelefone());
+        txtPacienteCPF.setText(paciente.getCPF());
     }
 
     /**
@@ -141,7 +141,7 @@ public class EditarCadastroPacientes extends javax.swing.JFrame {
         paciente.setSenha(txtPacienteSenha.getText());
         paciente.setIdade(Integer.parseInt(txtPacienteIdade.getText()));
         paciente.setTelefone(txtPacienteTelefone.getText());
-        paciente.setCPF(Integer.parseInt(txtPacienteCPF.getText()));
+        paciente.setCPF(txtPacienteCPF.getText());
         paciente.setId(txtIdPacientes.getText());
         
         try {
