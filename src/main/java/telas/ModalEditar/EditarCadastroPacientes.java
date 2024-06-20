@@ -84,7 +84,7 @@ public class EditarCadastroPacientes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtPacienteTelefone);
-        txtPacienteTelefone.setBounds(120, 300, 280, 24);
+        txtPacienteTelefone.setBounds(120, 240, 280, 24);
 
         txtPacienteCPF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +92,7 @@ public class EditarCadastroPacientes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtPacienteCPF);
-        txtPacienteCPF.setBounds(120, 240, 280, 24);
+        txtPacienteCPF.setBounds(120, 290, 280, 24);
         getContentPane().add(txtPacienteIdade);
         txtPacienteIdade.setBounds(120, 190, 280, 24);
 

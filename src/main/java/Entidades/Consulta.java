@@ -162,7 +162,7 @@ public class Consulta {
     }
 
     public static void listarEspecialidade(JComboBox combox) throws SQLException {
-        String sql = "SELECT Especialidade FROM Medicos";
+        String sql = "SELECT DISTINCT Especialidade FROM Medicos";
 
         ConnectionFactory factory = new ConnectionFactory();
         try (Connection c = factory.obtemConexao()) {
@@ -178,7 +178,7 @@ public class Consulta {
     }
 
     public static void listarMedicoByEspecialidade(String especialidade, JComboBox combox) throws SQLException {
-        String sql = "SELECT Nome FROM Medicos WHERE Especialidade = ?";
+        String sql = "SELECT DISTINCT Nome FROM Medicos WHERE Especialidade = ?";
 
         ConnectionFactory factory = new ConnectionFactory();
         try (Connection c = factory.obtemConexao()) {

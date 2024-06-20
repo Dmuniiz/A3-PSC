@@ -116,7 +116,7 @@ public class AdminCadastrarPacientes extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "ID", "Nome", "Senha", "Idade", "CPF", "Telefone"
+                "ID", "Nome", "Senha", "Idade", "Telefone", "CPF"
             }
         ) {
             boolean[] canEdit = new boolean [] {

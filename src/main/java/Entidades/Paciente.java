@@ -111,7 +111,7 @@ public class Paciente {
     }
     
     public DefaultTableModel mostrarPacientes() {
-        DefaultTableModel model = new DefaultTableModel(new String[]{"Id", "Nome", "Senha", "Idade", "CPF", "Telefone"},0);
+        DefaultTableModel model = new DefaultTableModel(new String[]{"Id", "Nome", "Senha", "Idade", "Telefone", "CPF"},0);
         String sql = "SELECT * FROM Pacientes";
         
         ConnectionFactory factory = new ConnectionFactory();
@@ -128,7 +128,7 @@ public class Paciente {
                 String telefone = rs.getString("Telefone");
                 String cpf = rs.getString("CPF");
                 
-                model.addRow(new Object[]{id,nome,senha,idade,cpf,telefone});
+                model.addRow(new Object[]{id,nome,senha,idade,telefone, cpf});
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -162,7 +162,7 @@ public class Paciente {
                 String telefone = rs.getString("Telefone");
                 String cpf = rs.getString("CPF");
                 
-                model.addRow(new Object[]{id,nome,senha,idade,cpf,telefone});
+                model.addRow(new Object[]{id,nome,senha,idade,telefone,cpf});
            }
 
             

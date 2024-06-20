@@ -75,9 +75,3 @@ CREATE TABLE Exames (
 
 -- drop table Exames;
 select * from Exames;
-
-select * from Medicos;
-
-DELETE FROM consulta WHERE fk_id_med = 8;
-DELETE FROM Exames WHERE fk_id_med = 8;
-DELETE FROM Medicos WHERE ID_med = 8;
