@@ -81,10 +81,9 @@ public class Dashboard extends javax.swing.JFrame {
         btnMedicos.setBounds(10, 370, 280, 60);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Admin");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(120, 250, 35, 16);
+        jLabel1.setBounds(120, 250, 36, 16);
 
         jLabel2.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,13 +98,11 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel3.setBounds(900, 80, 120, 140);
 
         labelQtdPacientes.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        labelQtdPacientes.setForeground(new java.awt.Color(0, 0, 0));
         labelQtdPacientes.setText("0");
         getContentPane().add(labelQtdPacientes);
         labelQtdPacientes.setBounds(1100, 200, 11, 26);
 
         labelQtdMedicos.setFont(new java.awt.Font("Dialog", 0, 20)); // NOI18N
-        labelQtdMedicos.setForeground(new java.awt.Color(0, 0, 0));
         labelQtdMedicos.setText("0");
         getContentPane().add(labelQtdMedicos);
         labelQtdMedicos.setBounds(680, 200, 20, 26);
@@ -117,9 +114,9 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnQuit);
-        btnQuit.setBounds(90, 520, 90, 24);
+        btnQuit.setBounds(90, 520, 90, 23);
 
-        background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\Dashboard.png")); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\Dashboard.png")); // NOI18N
         getContentPane().add(background);
         background.setBounds(0, 0, 1280, 720);
 

@@ -75,7 +75,7 @@ public class PacienteExames extends javax.swing.JFrame {
 
         labelId.setText("jLabel1");
         getContentPane().add(labelId);
-        labelId.setBounds(130, 230, 41, 16);
+        labelId.setBounds(130, 230, 37, 16);
 
         labelNome.setText("jLabel2");
         getContentPane().add(labelNome);
@@ -148,7 +148,7 @@ public class PacienteExames extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAtualizarTabela);
-        btnAtualizarTabela.setBounds(470, 230, 170, 24);
+        btnAtualizarTabela.setBounds(470, 230, 170, 23);
 
         txtPesquisarPacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,7 +156,7 @@ public class PacienteExames extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtPesquisarPacientes);
-        txtPesquisarPacientes.setBounds(970, 230, 170, 24);
+        txtPesquisarPacientes.setBounds(970, 230, 170, 22);
 
         btnPesquisar.setText("Pesquisar");
         btnPesquisar.addActionListener(new java.awt.event.ActionListener() {
@@ -165,9 +165,9 @@ public class PacienteExames extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnPesquisar);
-        btnPesquisar.setBounds(1140, 230, 90, 24);
+        btnPesquisar.setBounds(1140, 230, 90, 23);
 
-        background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaPacienteExames.png")); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaPacienteExames.png")); // NOI18N
         background.setText("jLabel1");
         getContentPane().add(background);
         background.setBounds(-10, 0, 1290, 730);

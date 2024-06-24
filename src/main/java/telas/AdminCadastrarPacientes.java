@@ -104,9 +104,8 @@ public class AdminCadastrarPacientes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnQuit);
-        btnQuit.setBounds(100, 510, 90, 24);
+        btnQuit.setBounds(100, 510, 90, 23);
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Admin");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(120, 240, 40, 20);
@@ -177,7 +176,7 @@ public class AdminCadastrarPacientes extends javax.swing.JFrame {
         getContentPane().add(btnTelaDashboard);
         btnTelaDashboard.setBounds(0, 440, 300, 50);
 
-        ImgTelaCadastrarPacientes.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaAdminCadastrarPacientes.png")); // NOI18N
+        ImgTelaCadastrarPacientes.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaAdminCadastrarPacientes.png")); // NOI18N
         getContentPane().add(ImgTelaCadastrarPacientes);
         ImgTelaCadastrarPacientes.setBounds(0, 0, 1260, 710);
 

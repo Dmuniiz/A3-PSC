@@ -61,7 +61,7 @@ public class Admin {
                 boolean isPaciente = rs.getBoolean("is_paciente");
                 if (isPaciente) {
                     int getIdade = rs.getInt("Idade");
-                    int getCPF = rs.getInt("CPF");  
+                    String getCPF = rs.getString("CPF");  
                     int getTelefone = rs.getInt("Telefone");
                     int getId = rs.getInt("ID_pac");  
                     

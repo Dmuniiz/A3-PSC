@@ -102,7 +102,7 @@ public class AdminCadastrarMedicos extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnQuit);
-        btnQuit.setBounds(90, 520, 90, 24);
+        btnQuit.setBounds(90, 520, 90, 23);
 
         TableMedicos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -159,7 +159,6 @@ public class AdminCadastrarMedicos extends javax.swing.JFrame {
         btnDeletar.setBounds(890, 240, 130, 30);
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Admin");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(120, 240, 40, 20);
@@ -174,7 +173,7 @@ public class AdminCadastrarMedicos extends javax.swing.JFrame {
         getContentPane().add(btnTelaPacientes);
         btnTelaPacientes.setBounds(0, 310, 300, 50);
 
-        ImgTelaCadastrarMedicos.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaAdminCadastrarMedicos.png")); // NOI18N
+        ImgTelaCadastrarMedicos.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaAdminCadastrarMedicos.png")); // NOI18N
         getContentPane().add(ImgTelaCadastrarMedicos);
         ImgTelaCadastrarMedicos.setBounds(0, 0, 1260, 710);
 

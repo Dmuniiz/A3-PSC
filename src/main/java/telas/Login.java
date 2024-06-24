@@ -90,7 +90,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(chMostrarSenha);
         chMostrarSenha.setBounds(710, 450, 140, 40);
 
-        ImgTelaLogin.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaLogin.png")); // NOI18N
+        ImgTelaLogin.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaLogin.png")); // NOI18N
         ImgTelaLogin.setLabelFor(btnEntry);
         ImgTelaLogin.setToolTipText("");
         getContentPane().add(ImgTelaLogin);

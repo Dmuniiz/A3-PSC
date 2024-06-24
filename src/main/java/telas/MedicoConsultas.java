@@ -66,7 +66,7 @@ public class MedicoConsultas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnQuit);
-        btnQuit.setBounds(160, 510, 90, 24);
+        btnQuit.setBounds(160, 510, 90, 23);
 
         TableConsultasMedicos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,7 +121,7 @@ public class MedicoConsultas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAtualizarTabela);
-        btnAtualizarTabela.setBounds(480, 250, 150, 24);
+        btnAtualizarTabela.setBounds(480, 250, 150, 23);
 
         btnMarcarExame.setContentAreaFilled(false);
         btnMarcarExame.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -140,9 +140,9 @@ public class MedicoConsultas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnConsultaRealizada);
-        btnConsultaRealizada.setBounds(690, 250, 170, 24);
+        btnConsultaRealizada.setBounds(690, 250, 170, 23);
 
-        ImgTelaMedicoConsultas.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaMedicoConsultas.png")); // NOI18N
+        ImgTelaMedicoConsultas.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaMedicoConsultas.png")); // NOI18N
         getContentPane().add(ImgTelaMedicoConsultas);
         ImgTelaMedicoConsultas.setBounds(0, 0, 1280, 720);
 

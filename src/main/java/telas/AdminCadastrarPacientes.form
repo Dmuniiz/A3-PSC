@@ -117,9 +117,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="0" type="rgb"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Admin"/>
       </Properties>
       <Constraints>
@@ -254,7 +251,7 @@
     <Component class="javax.swing.JLabel" name="ImgTelaCadastrarPacientes">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Davy\Documents\NetBeansProjects\projetoA3psc\src\main\java\imgs\ImgTelaAdminCadastrarPacientes.png"/>
+          <Image iconType="2" name="D:\1 SEM\Programa&#xe7;&#xe3;o de solu&#xe7;&#xf5;es computacionais\projetoA3psc\src\main\java\imgs\ImgTelaAdminCadastrarPacientes.png"/>
         </Property>
       </Properties>
       <Constraints>

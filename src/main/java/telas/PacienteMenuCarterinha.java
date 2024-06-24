@@ -22,10 +22,10 @@ public class PacienteMenuCarterinha extends javax.swing.JFrame {
         
     }
 
-    public void MenuCarterinha(String nome, int CPF, int idade, int telefone, int id){
+    public void MenuCarterinha(String nome, String CPF, int idade, int telefone, int id){
         labelNome.setText(nome);
         labelNome1.setText(nome);
-        labelCPF.setText(Integer.toString(CPF));
+        labelCPF.setText(CPF);
         labeldade.setText(Integer.toString(idade));
         labelTelefone.setText(Integer.toString(telefone));
         labelId.setText(Integer.toString(id));
@@ -74,7 +74,7 @@ public class PacienteMenuCarterinha extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnQuit);
-        btnQuit.setBounds(20, 20, 90, 24);
+        btnQuit.setBounds(20, 20, 90, 23);
 
         labelTelefone.setText("jLabel2");
         getContentPane().add(labelTelefone);
@@ -109,7 +109,7 @@ public class PacienteMenuCarterinha extends javax.swing.JFrame {
 
         labelId.setText("jLabel1");
         getContentPane().add(labelId);
-        labelId.setBounds(130, 220, 41, 16);
+        labelId.setBounds(130, 220, 37, 16);
 
         btnNavPacienteExames.setBorder(null);
         btnNavPacienteExames.setContentAreaFilled(false);
@@ -122,7 +122,7 @@ public class PacienteMenuCarterinha extends javax.swing.JFrame {
         getContentPane().add(btnNavPacienteExames);
         btnNavPacienteExames.setBounds(0, 440, 400, 60);
 
-        backgroundPacienteCarterinha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaPacienteCarterinha.png")); // NOI18N
+        backgroundPacienteCarterinha.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaPacienteCarterinha.png")); // NOI18N
         getContentPane().add(backgroundPacienteCarterinha);
         backgroundPacienteCarterinha.setBounds(0, 0, 1260, 720);
 

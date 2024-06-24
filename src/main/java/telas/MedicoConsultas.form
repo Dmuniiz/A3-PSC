@@ -164,7 +164,7 @@
     <Component class="javax.swing.JLabel" name="ImgTelaMedicoConsultas">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\Davy\Documents\NetBeansProjects\projetoA3psc\src\main\java\imgs\ImgTelaMedicoConsultas.png"/>
+          <Image iconType="2" name="D:\1 SEM\Programa&#xe7;&#xe3;o de solu&#xe7;&#xf5;es computacionais\projetoA3psc\src\main\java\imgs\ImgTelaMedicoConsultas.png"/>
         </Property>
       </Properties>
       <Constraints>

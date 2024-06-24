@@ -78,7 +78,7 @@ public class PacienteConsultas extends javax.swing.JFrame {
 
         labelId.setText("jLabel1");
         getContentPane().add(labelId);
-        labelId.setBounds(130, 230, 41, 16);
+        labelId.setBounds(130, 230, 37, 16);
 
         labelNome.setText("jLabel2");
         getContentPane().add(labelNome);
@@ -129,7 +129,7 @@ public class PacienteConsultas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAtualizarTableConsulta);
-        btnAtualizarTableConsulta.setBounds(480, 240, 170, 24);
+        btnAtualizarTableConsulta.setBounds(480, 240, 170, 23);
 
         btnCancelarConsulta.setText("Cancelar Consulta");
         btnCancelarConsulta.addActionListener(new java.awt.event.ActionListener() {
@@ -138,7 +138,7 @@ public class PacienteConsultas extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnCancelarConsulta);
-        btnCancelarConsulta.setBounds(720, 240, 170, 24);
+        btnCancelarConsulta.setBounds(720, 240, 170, 23);
 
         btnNavMarcarConsultas.setBorder(null);
         btnNavMarcarConsultas.setContentAreaFilled(false);
@@ -162,7 +162,7 @@ public class PacienteConsultas extends javax.swing.JFrame {
         getContentPane().add(btnNavPacienteExames);
         btnNavPacienteExames.setBounds(0, 440, 400, 60);
 
-        background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Davy\\Documents\\NetBeansProjects\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaPacienteConsultas.png")); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon("D:\\1 SEM\\Programação de soluções computacionais\\projetoA3psc\\src\\main\\java\\imgs\\ImgTelaPacienteConsultas.png")); // NOI18N
         background.setMaximumSize(new java.awt.Dimension(1280, 720));
         background.setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().add(background);
